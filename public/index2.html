@@ -6,21 +6,27 @@
         <title>Hello Tailwind</title>
         <link rel="stylesheet" href="build/tailwind.css">
     </head>
-    <body class="bg-gray-50">
-        <div class="px-8 py-12">     
-            <div><img class="h-20 inline-block" src="img/logo.png" alt="seunggyul"> 
-                <span class="text-2xl">Tailwind 로 만들어보는 샘플페이지2  </span>                
-            </div>       
-            
-            <img class="mt-6 rounded-lg shadow-xl" src="img/women_use_computer.jpg">
-            <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight">Tailwind 좋습니다
-                <span class="text-indigo-500">CSS도 직관적으로 코딩을 할 수 있어요</span>
-            </h1>
-            <p class="mt-2 text-gray-600">
-                tailwind 좋다 좋다 말만 들었는데, css가 정말 깔끔하게 되어 있어서 좋다. 프레임웤에서 제공해주는 컴포넌트를 그대로 사용하는게 아니라면 tailwind를 가지고 하나씩 만들어가면서 하는게 훨씬 나을 것 같다. 
-            </p>
-            <div class="mt-4">
-                <a href="#" class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 text-sm text-white uppercase tracking-wider font-semibold">Book your escape</a>
+    <body class="bg-gray-300">
+        <div class="bg-gray-100 flex">
+            <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">                
+                <div class="xl:max-w-lg xl:ml-auto">                    
+                    <div><img class="h-20 inline-block" src="img/logo.png" alt="seunggyul"> 
+                        <span class="text-black text-4xl ">Tailwind 샘플페이지</span>                
+                    </div>       
+                    <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden" src="img/women_use_computer.jpg">
+                    <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:mt-8 sm:text-4xl">Tailwind 좋습니다
+                       <br> <span class="text-indigo-500">직관적으로 코딩을 할 수 있어요</span>
+                    </h1>
+                    <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl lg:text-2xl">
+                        tailwind 좋다 좋다 말만 들었는데, css가 정말 깔끔하게 되어 있어서 좋다. 프레임웤에서 제공해주는 컴포넌트를 그대로 사용하는게 아니라면 tailwind를 가지고 하나씩 만들어가면서 하는게 훨씬 나을 것 같다. 
+                    </p>
+                    <div class="mt-4 sm:mt-6">
+                        <a href="#" class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 active:bg-indigo-600 focus:outline-none focus:shadow-outline text-sm text-white uppercase tracking-wider font-semibold sm:text-base">Book your escape</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block lg:w-1/2 lg:relative lg:object-center">
+                <img class="absolute inset-0 h-full w-full object-cover" src="img/women_use_computer.jpg">            
             </div>
         </div>
     </body>
